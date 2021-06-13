@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>채팅</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+    <style>
+      body {
+        background-color:black;
+      }
+      img.absolute { 
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body> <!--순서대로 포스터,예고편,영화사,평점사,실시간 채팅,정보-->
+    <img src = "../img/poster/4_civilwar.jpg" style="float: left; margin-left: 50px; margin-top: 50px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EDfBPe3URhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="margin-left:25px; margin-top:50px;" allowfullscreen></iframe>
+    <hr style="width:559px; margin-left:457px;"/>
+    <h2 style="color:white; margin-left:455px;">"Mission report, December 16th, 1991."</h2>
+    <hr style="width:559px; margin-left:457px;"/>
+    <img src="../img/icon/lotte.png" style="margin-left:45px; margin-top:5px;" width="150" height="150" onclick="window.open('https://www.lottecinema.co.kr/NLCHS')"target="_blank">
+    <img src="../img/icon/cgv.png" style="margin-left:45px; margin-top:5px;" width="150" height="150" onclick="window.open('https://www.cgv.co.kr/')"target="_blank">
+    <img src="../img/icon/mega.png" style="margin-left:25px; margin-top:10px;" width="150" height="150" onclick="window.open('https://www.megabox.co.kr/')"target="_blank">
+    <hr style="width:559px; margin-left:457px;"/>
+    <img class="absolute" src="../img/icon/IMDB.png" style="margin-left:475px; margin-top:15px;" width="150" height="150" onclick="window.open('https://www.imdb.com/title/tt0371746/ratings?ref_=tt_ov_rt')"target="_blank">
+    <img class="absolute" src="../img/icon/meta.png" style="margin-left:675px; margin-top:15px;" width="150" height="150" onclick="window.open('https://www.metacritic.com/movie/iron-man')"target="_blank">
+    <img class="absolute" src="../img/icon/tomato.png" style="margin-left:865px; margin-top:15px;" width="150" height="150" onclick="window.open('https://www.rottentomatoes.com/m/iron_man')"target="_blank">    
+    <div id="main">
+      <div id="chat">
+        <!-- 채팅 메시지 영역 -->
+      </div>
+      <div>
+        <input type="text" id="test" placeholder="메시지를 입력해주세요..">
+        <button onclick="send()">전송</button>
+      </div>
+    </div>
+    <h1 id="roomName" style="color:white; margin-left:75px;">캡틴아메리카 - 시빌 워</h1><!-- 구분위한 아이디값 -->
+    <hr style="color:white; width:382px; margin-left:50px;"/>
+    <p style="color:white; margin-left:50px;">장르 : 슈퍼히어로</p>
+    <p style="color:white; margin-left:50px;">감독 : 루소 형제</p>
+    <p style="color:white; margin-left:50px;">상영 시간 : 147분</p>
+    <p style="color:white; margin-left:50px;">상영 등급 : 12세 이상 관람가</p>
+  </body>
+</html>
